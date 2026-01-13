@@ -1,0 +1,79 @@
+1. Document Structure & Metadata
+<!DOCTYPE html>
+<html>
+<head>
+<meta>
+  desc
+  kw
+  redirect
+<title>
+<body>
+
+2. Navigation & Linking
+<a>
+<nav>
+<marquee>
+
+3. Headings & Basic Text
+<h1> – <h6>
+<p>
+
+4. Text Semantics & Formatting (Important Group)
+<strong>
+<em>
+<mark>
+<small>
+<span>
+<i>
+<b>
+
+5. Lists
+<ul>
+<ol>
+<li>
+<dl>
+<dt>
+<dd>
+
+6. Tables & Data Representation
+<table>
+<caption>
+<thead>
+<tbody>
+<tr>
+<th>
+<td>
+scope attribute
+
+7. Forms & Inputs
+<form>
+<label>
+<input>
+  text
+  email
+  tel
+  date
+  file
+<textarea>
+<select>
+<option>
+<button>
+
+8. Form-Related Advanced Tags
+<fieldset>
+<legend>
+<datalist>
+
+9. Disclosure & Interactive Content
+<details>
+<summary>
+
+10. Time & Contact Semantics
+<time>
+<address>
+
+11. Media (Basic Only)
+<img>
+
+12. General Structural Containers
+<div> (discussed conceptually, avoided in practice)
