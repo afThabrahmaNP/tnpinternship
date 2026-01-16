@@ -1,0 +1,97 @@
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text {
+    background-image: url(../assets/dp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#lists {
+    padding-left: 5%;   
+    color: rgb(32, 123, 146);
+}
+
+#prm-btn {
+    background-color: blueviolet;
+    margin-top: 10%;
+    margin-left: 10px;
+    height: 50px;
+}
+
+#sec-btn {
+    width: 100px;
+    margin-left: 10px;
+    height: max-content;
+}
+
+#form-name{
+    border: 1px solid rgb(21, 10, 219);
+}
+#form-name:active {
+    border: 2px solid yellow;
+}
+#form-textarea {
+    background-color: black;
+    color: aquamarine;
+}
+
+.selection {
+    width: 200px;
+    background-color: blanchedalmond;
+}
+
+.div1 {
+    background-color: rgb(141, 141, 202);
+    padding: 10%;
+}
+
+.div2 {
+    margin-left: 10%;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#heartimg {
+    width:250px;
+}
+
+#prm-btn:hover {
+    transform: rotateX('45');
+    background-color: aquamarine;
+}
+
+input , textarea, select {
+    padding: 8px;
+    margin: 6px;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #cb6b6b;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #bb8787;
+}
+
+tr:hover {
+    background-color: rgb(158, 158, 205);
+}

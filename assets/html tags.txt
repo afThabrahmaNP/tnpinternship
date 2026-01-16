@@ -1,79 +1,181 @@
 1. Document Structure & Metadata
-<!DOCTYPE html>
-<html>
-<head>
-<meta>
-  desc
-  kw
-  redirect
-<title>
-<body>
 
-2. Navigation & Linking
-<a>
-<nav>
-<marquee>
+ <!DOCTYPE html> – Declares the document as HTML5.
+ <html> – Root element of the HTML document.
+ <head> – Container for metadata and linked resources.
+ <title> – Sets the browser tab title.
+ <base> – Sets a base URL for all relative links.
+ <meta> – Provides metadata about the document.
+   charset – Defines character encoding.
+   name="description" – Page summary for SEO.
+   name="keywords" – Keywords for search engines (legacy).
+   http-equiv="refresh" – Page refresh or redirect.
+   
+ <link> – Links external resources (CSS, icons).
+ <style> – Embeds internal CSS.
+ <script> – Embeds or links JavaScript.
+ <noscript> – Fallback content when JavaScript is disabled.
+ <body> – Contains all visible page content.
 
-3. Headings & Basic Text
-<h1> – <h6>
-<p>
 
-4. Text Semantics & Formatting (Important Group)
-<strong>
-<em>
-<mark>
-<small>
-<span>
-<i>
-<b>
+ 2. Semantic Layout & Structure
 
-5. Lists
-<ul>
-<ol>
-<li>
-<dl>
-<dt>
-<dd>
+ <header> – Introductory content for a page or section.
+ <nav> – Primary navigation links.
+ <main> – Main content of the document (one per page).
+ <section> – Groups related content with a heading.
+ <article> – Self-contained, reusable content unit.
+ <aside> – Secondary or related content.
+ <footer> – Footer information for a page or section.
 
-6. Tables & Data Representation
-<table>
-<caption>
-<thead>
-<tbody>
-<tr>
-<th>
-<td>
-scope attribute
 
-7. Forms & Inputs
-<form>
-<label>
-<input>
-  text
-  email
-  tel
-  date
-  file
-<textarea>
-<select>
-<option>
-<button>
+ 3. Headings & Text Content
 
-8. Form-Related Advanced Tags
-<fieldset>
-<legend>
-<datalist>
+ <h1>–<h6> – Headings with decreasing importance.
+ <p> – Logical paragraph of text.
+ <br> – Line break inside text.
+ <hr> – Thematic break between content sections.
 
-9. Disclosure & Interactive Content
-<details>
-<summary>
 
-10. Time & Contact Semantics
-<time>
-<address>
+ 4. Text Semantics & Inline Formatting
 
-11. Media (Basic Only)
-<img>
+ <strong> – Strong importance.
+ <em> – Emphasized text.
+ <mark> – Highlighted text.
+ <small> – Side comments or fine print.
+ <span> – Inline container with no semantic meaning.
+ <b> – Bold text without semantic meaning.
+ <i> – Alternate voice or stylistic text.
+ <u> – Underlined text (discouraged).
+ <s> – Text that is no longer accurate.
+ <del> – Deleted content.
+ <ins> – Inserted content.
+ <sub> – Subscript text.
+ <sup> – Superscript text.
+ <abbr> – Abbreviation with full meaning.
+ <cite> – Title of a work.
+ <q> – Short inline quotation.
+ <blockquote> – Long external quotation.
+ <time> – Machine-readable date or time.
+ <address> – Contact or author information.
 
-12. General Structural Containers
-<div> (discussed conceptually, avoided in practice)
+
+ 5. Code, Technical & Computer Text
+
+ <code> – Inline code snippet.
+ <pre> – Preformatted text.
+ <kbd> – Keyboard input.
+ <samp> – Sample program output.
+ <var> – Variable name in math or programming.
+ <data> – Machine-readable value with human text.
+
+
+ 6. Lists
+
+ <ul> – Unordered list.
+ <ol> – Ordered list.
+ <li> – List item.
+ <dl> – Description list.
+ <dt> – Term in description list.
+ <dd> – Description of the term.
+
+
+ 7. Tables & Data Representation
+
+ <table> – Tabular data container.
+ <caption> – Table title.
+ <thead> – Header row group.
+ <tbody> – Body row group.
+ <tfoot> – Footer row group.
+ <tr> – Table row.
+ <th> – Header cell.
+ <td> – Data cell.
+ scope attribute – Defines header scope.
+
+
+ 8. Forms & Input Controls
+
+ <form> – User input form container.
+ <label> – Label for form control.
+ <input> – Single-line input field.
+   text, email, password, tel, url
+   number, range, date, time, month, week
+   radio, checkbox
+   file, color, hidden
+   submit, reset, button
+
+ <textarea> – Multi-line input.
+ <select> – Dropdown list.
+ <option> – Dropdown option.
+ <optgroup> – Groups options.
+ <button> – Clickable button.
+ <fieldset> – Groups related inputs.
+ <legend> – Caption for fieldset.
+ <datalist> – Input suggestions.
+ <output> – Displays calculated results.
+ <progress> – Task completion progress.
+ <meter> – Scalar measurement.
+
+
+ 9. Media & Graphics
+
+ <img> – Image.
+ <figure> – Media with caption.
+ <figcaption> – Caption for figure.
+ <audio> – Audio playback.
+ <video> – Video playback.
+ <source> – Media source.
+ <track> – Subtitles/captions.
+ <picture> – Responsive images.
+ <iframe> – Embedded external content.
+ <embed> – Embedded external content (legacy).
+ <object> – Embedded resource container.
+ <map> – Image map.
+ <area> – Clickable area in image map.
+ <canvas> – Scriptable drawing area.
+ <svg> – Scalable vector graphics.
+
+
+ 10. Disclosure & Interaction
+
+ <details> – Expandable content.
+ <summary> – Visible heading for details.
+ <dialog> – Modal or popup dialog.
+
+
+ 11. Templates & Reuse
+
+ <template> – Hidden reusable HTML fragment.
+ <slot> – Web component content slot (advanced).
+
+ 12. Internationalization & Text Direction
+
+ <bdi> – Isolates bidirectional text.
+ <bdo> – Overrides text direction.
+ <ruby> – Ruby annotations container.
+ <rt> – Ruby text.
+ <rp> – Ruby fallback parentheses.
+
+
+ 13. Generic Containers
+
+ <div> – Generic block container (last resort).
+
+ 14. Deprecated / Legacy Tags (DO NOT USE)
+
+ <font> – Styling text (deprecated).
+ <center> – Centering content (deprecated).
+ <marquee> – Scrolling text (deprecated).
+ <frameset>, <frame>, <noframes> – Old frame layout.
+ align attribute – Replaced by CSS.
+
+ 15. Global Attributes (Apply to Most Tags)
+
+ id – Unique identifier.
+ class – Class grouping.
+ title – Tooltip text.
+ hidden – Hides element.
+ contenteditable – Makes content editable.
+ draggable – Enables drag behavior.
+ tabindex – Keyboard navigation order.
+ role, aria- – Accessibility attributes.

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Playground</title>
+    <style>
+        #onhead{
+            background-color: rgb(29, 29, 103);
+            font-size: smaller;
+            color: beige;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Basics Playground</h1>
+    <p>This page contains common HTML elements for practicing basic CSS concepts.</p>
+
+    <section class="text">
+        <h2>Text Elements</h2>
+        <p style="color: red;">This is a normal paragraph with inline css applied</p>
+        <p><strong>Strong text</strong> and <em>emphasized text</em>.</p>
+        <p><span>Inline span text</span> inside a paragraph.</p>
+        <small>This is small helper text.</small>
+    </section>
+
+    <section>
+        <h2 id="onhead">Links & Buttons (CSS is been applied internally through the head)</h2>
+        <a href="#">This is a link</a>
+        <br>
+        <button id="prm-btn">Primary Button</button>
+        <button id="sec-btn">Secondary Button</button>
+    </section>
+
+    <section id="lists">
+        <h2>Lists</h2>
+        <ul>
+            <li>Unordered item one</li>
+            <li>Unordered item two</li>
+            <li>Unordered item three</li>
+        </ul>
+        <ol>
+            <li>Ordered item one</li>
+            <li>Ordered item two</li>
+            <li>Ordered item three</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Box Model Elements</h2>
+        <div class="div1">Simple div box</div>
+        <div class="div2">Another div box</div>
+    </section>
+
+    <section>
+        <h2>Image</h2>
+        <img id="heartimg" src="/assets/figure.png" alt="Placeholder image" width="150px">
+    </section>
+
+    <section>
+        <h2>Form Elements</h2>
+        <form>
+            <label>Name</label>
+            <input type="text" id="form-name">
+            <br>
+            <label>Email</label>
+            <input type="email">
+            <br>
+            <label>Message</label>
+            <textarea rows="3" id="form-textarea"></textarea>
+            <br>
+            <select class="selection">
+                <option>Option One</option>
+                <option>Option Two</option>
+            </select>
+        </form>
+    </section>
+
+    <section>
+        <h2>Table</h2>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Row 1</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 2</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 3</td>
+                <td>Data</td>
+            </tr>
+            <tr>
+                <td>Row 4</td>
+                <td>Data</td>
+            </tr>
+        </table>
+    </section>
+    <br><br><br><br><br>
+
+</body>
+</html>
